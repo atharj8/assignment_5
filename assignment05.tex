@@ -1,0 +1,113 @@
+\documentclass[tikz,border=2pt,png]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\begin{document}
+\title{ASSIGNMENT 5}
+\author{Athar Javed}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+\item{\textbf{Exercise 2.58:}}\\
+
+Draw a pair of tangents to a circle of radius 5 cm which are inclined to each other at an angle of 60^{\circ}:\\
+
+
+\item{\textbf{Solution:}}\\
+
+$ 
+
+Given, Radius of circle=r=5cm\\
+$
+
+Now,\\
+
+\textit{Steps of Construction are:}\\
+$
+
+1: Draw circle with centre O and radius OA=5 cm.\\
+
+2: Mark another point B on the circle such that {\angle}AOB=120^{\circ},\\
+
+supplementary to the angle between the tangents. Since the angle between the \\
+
+tangents to be constructed is 60^{\circ}.\\
+
+\therefore{} & \hspace{3 cm}{\angle}AOB=180^{\circ}-60^{\circ}=120^{\circ}.\\
+
+3: Construct angles of 90^{\circ},$ $ 
+
+at A and B and extend the lines so as to intersect at point P.\\
+
+4: Thus, AP and BP are the required tangents to the circle.\\
+$
+
+Now, the figure of constructed tangents is given below,\\
+ 
+
+ \begin{tikzpicture}[scale=0.65]
+ \draw(-10,0)--(10,0) node[anchor=north west]{x axis};
+ \draw(0,-7)--(0,7) node[anchor=south east]{y axis};
+ \draw[blue] (0,0)--(4.3,-2.7);
+ \draw[blue] (0,0)--(0,5);
+ \node at (4.3,-3){$A$};
+ \node at (-0.3,5.3){$B$}; 
+ \node at (0.3,0.3){$O$};
+ \draw (0,0) circle (5 cm);
+ \node at (9,5.3){P};
+ \draw[red] (4.27,-2.7)--(9,5);
+ \draw[red] (0,5)--(9,5);
+ 
+ \end{tikzpicture}\\
+
+
+BP and AP are the pair of tangents to a given circle.\\
+
+\newpage
+\item{\textbf{Question 2.59:}}\\
+
+Draw a line segment AB of length 8 units. Taking A as centre, draw a circle of radius 4 units and taking B as centre, draw another circle of radius 3 units. Construct tangents to each circle from the centre of the other circle:
+
+\item{\textbf{Solution:}}\\
+
+Given the radii of two concentric circles of radius 4 units and 6 units respectively,\\
+
+\textit{Steps of Construction:}\\
+$
+
+1: Draw a line segment AB= 8units.\\
+
+2: Draw a circle of radius 4 units, taking A as its centre.\\
+
+3: Draw a circle of radius 3 units, taking B as its centre.\\
+
+4: Now, Draw the tangents to each circle from the centre of other circle.\\ 
+$\\
+ 
+   From the construction required tangents are given below:\\
+   
+
+ \begin{tikzpicture}[scale=0.65]
+ \draw(-12,0)--(12,0) node[anchor=north west]{x axis};
+ \draw(0,-5)--(0,5) node[anchor=south east]{y axis};
+ \draw (0,0)--(8,0);
+ \node at (-0.3,0.3){$A$};
+ \node at (8.3,0.3){$B$};
+ \draw (0,0) circle (4 cm);
+ \draw (8,0) circle (3 cm);
+ \draw[red] (8,0)--(2.3,3.3);
+ \draw[red] (8,0)--(2.3,-3.3);
+ \node at (2.4,3.6){$C$};
+ \node at (2.4,-3.6){$F$};
+ \draw[red] (0,0)--(7.2,2.9);
+ \draw[red] (0,0)--(7.2,-2.9);
+ \node at (7.3,3.2){$D$};
+ \node at (7.3,-3.2){$E$};
+ \end{tikzpicture}\\
+
+ 
+ AD, AE and BC,BF are the two pairs of tangents to each circle from the centre of other circle.
+\end{itemize}
+\end{document}
